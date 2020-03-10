@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过滤器</title>
+</head>
+<script src="lib/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".mylist li:last").css("background-color","yellow");
+        // console.log($(".mylist li:first"));
+        $(".mylist li").first().css("font-size","20px").html("hello");
+        $(".mylist li").eq(1).css("color","red");
+
+        console.log($("#div").children("#qwe").html());
+
+        console.log($("#div2 spn").html())
+})
+</script>
+<style>
+    .mylist{
+        width: 500px;
+        list-style: none;
+    }
+    .mylist li{
+        margin-bottom: 5px;
+        padding-top: 30px;
+        border: 2px dashed orange;
+        /*color: red;*/
+    }
+</style>
+<body>
+<div id="div">
+    <ul class="mylist">
+        <li>first</li>
+        <li id="qwe"><p>second</p></li>
+        <li>last</li>
+    </ul>
+</div>
+
+
+<div id="div2">
+    <span>111</span>
+    <span>222</span>
+    <div>333</div>
+</div>
+</body>
+</html>
