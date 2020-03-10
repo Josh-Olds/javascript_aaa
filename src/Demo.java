@@ -60,10 +60,6 @@ public class Demo {
         HashSet<BaseResultModel> set = new HashSet<>();
         set.add(b1);
 
-
-//        Collections.
-
-
         for (BaseResultModel baseResultModel : arrayList){
             System.out.println(baseResultModel.toString());
         }
