@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜单</title>
+    <style>
+        body{
+            font:16px "Microsoft YaHei",sans-serif;
+        }
+        .nav-list {
+            width: 220px;
+            border-bottom:1px solid #ccc;
+        }
+        .nav-list h3{
+            margin: 0px;
+            padding: 10px 20px;
+            line-height: 20px;
+            font-weight: normal;
+            color: #fff;
+            background-color: #333;
+            border-top: 1px solid #ccc;
+        }
+        a {
+            text-decoration: none;/*下滑线*/
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-list li a {
+            display: block;
+            padding: 10px 20px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            color: #333;
+        }
+
+        .nav-list li a:hover{
+            background-color: #ccc;
+        }
+
+        .nav-list ul{
+            display: none;
+        }
+
+        .nav-list h3{
+            position: relative;/*给图片相对定位*/
+            margin: 0;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: normal;
+            border-top: 1px solid #ccc;
+            cursor: pointer; /*鼠标手*/
+        }
+
+        .nav-list h3:hover{
+            background-color: #222;
+        }
+        .nav-list h3 span{
+            position: absolute;
+            right: 20px;
+            top: 14px;
+            width: 12px;
+            height: 12px;
+            background: url("img/close2.png") no-repeat;
+        }
+        .nav-list h3.open span{
+            background: url("img/open2.png") no-repeat;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="nav-list">
+    <h3>选择器<span></span></h3>
+    <ul>
+        <li><a href="#">表单选择器1</a></li>
+        <li><a href="#">表单选择器2</a></li>
+        <li><a href="#">表单选择器3</a></li>
+        <li><a href="#">表单选择器4</a></li>
+        <li><a href="#">表单选择器5</a></li>
+        <li><a href="#">表单选择器6</a></li>
+    </ul>
+
+    <h3>过滤器<span></span></h3>
+    <ul>
+        <li><a href="#">过滤器1</a></li>
+        <li><a href="#">过滤器2</a></li>
+        <li><a href="#">过滤器3</a></li>
+        <li><a href="#">过滤器4</a></li>
+        <li><a href="#">过滤器5</a></li>
+        <li><a href="#">过滤器6</a></li>
+    </ul>
+    <h3>DOM操作<span></span></h3>
+    <ul>
+        <li><a href="#">DOM操作1</a> </li>
+        <li><a href="#">DOM操作2</a> </li>
+        <li><a href="#">DOM操作3</a> </li>
+        <li><a href="#">DOM操作4</a> </li>
+        <li><a href="#">DOM操作5</a> </li>
+
+    </ul>
+</div>
+
+<ul>
+    <li id="first">我是第一</li>
+    <li id="second">我是二</li>
+    <li id="last">我是最后</li>
+
+</ul>
+<p id = "append">hello </p>
+<div id="world">world</div>
+<script src="lib/jquery.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+
+        $(".nav-list h3").click(function () {
+
+            /*形式 1 */
+           /* if ($(this).hasClass("open")){
+                $(this).removeClass("open");
+            } else{
+                $(this).addClass("open");
+            }*/
+           //直接用来回切换的（形式 1 的简写）
+           //  $(this).toggleClass("open");
+
+            /*形式 2*/
+           /* if ($(this).next("ul").is(":visible")){
+                $(this).next("ul").slideUp();
+            }else{
+                $(this).next("ul").slideDown();
+            }*/
+            //直接用来回切换的 （形式 2 的简写）
+            // $(this).next("ul").slideToggle();
+
+            //最简单的
+            // $(this).toggleClass("open").next("ul").slideToggle();
+
+
+
+            $(this)
+                .toggleClass("open") //切换是否增加span标签
+                .siblings("ul") // 找到当前“ul”元素的同级的“ul”元素
+                .removeClass("open") // 移除span标签
+                .end() // 返回上层“破坏性”之前的一级，既是返回$(this)
+                .next("ul") // 后面紧邻的同辈“ul”元素
+                .slideToggle() //切换是否显示
+                .siblings("ul") // 找到当前“ul”元素的同级的“ul”元素
+                .slideUp(); // 隐藏其他的“ul”
+
+        })
+
+       /* $(".nav-list h3").each(function (index,ele) {
+        console.log(index,ele);
+        console.log($(ele).html());
+        })*/
+
+
+       console.log($("#first").index());
+       console.log($("#second").index());
+       console.log($("#last").index());
+       console.log($("li").index('#first'));
+       console.log($("li").index('#second'));
+       console.log($("li").index('#last'))
+
+        // $("#append").append($("#world").html());
+
+
+
+
+    })
+
+
+
+</script>
+</body>
+</html>

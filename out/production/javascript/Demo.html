@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+<p id="text_id"> 看看我是否在改变了哈 </p>
+<button id="buttons" type="button" name = "button" value=""  >点我</button>
+<input id="in" type="text"></input>
+<button type="button" onclick="fun('qin',34),changeDemo()">函数</button>
+<br>
+<button type="button" onclick="ajaxDemo()">获取短信</button>
+
+<div id="example"></div>
+<script src="jquery/lib/jquery.min.js"></script>
+<script>
+    document.write("<h1> hello </h1>")// 直接HTML输出流
+
+    // window.alert("ahh");
+    document.write(Date());
+    console.log("log...")
+    function text(){
+        // d = document.getElementById("text_id").innerHTML = "<H1>我变啦</H1>";
+        d = document.getElementById("text_id");
+        d.style.color="#ff0000";
+        button = document.getElementsByName("button");
+    }
+
+    function demo2(){
+        var value = document.getElementById("in").value;
+
+        if (value == "" || isNaN(value)){
+            if (isNaN(value)||value.replace(/(^\s*)|(\s*$)/g,"")==""){
+                alert("不是数字");
+
+            }
+        }
+    }
+
+    var x ;
+    var x = 1;
+
+    var string  = "guanhuaiqn";
+    var string = 'guanhuaqin""';
+    var string = "guan";
+
+    var arr  = new Array();
+    arr[0] = 1;
+    arr[1] = 2;
+    arr[2] = 3;
+    console.log(arr);
+    var arr2 = new Array("a","b","c");
+    console.log(arr2);
+    var arr3 = ["qwe","asd","zcc"];
+    console.log(arr3);
+    /*
+    JavaScript 数据类型
+    值类型(基本类型)：字符串（String）、数字(Number)、布尔(Boolean)、对空（Null）、未定义（Undefined）、Symbol。
+    引用数据类型：对象(Object)、数组(Array)、函数(Function)。
+     */
+
+    //对象类型
+var arr_person = new Array();
+    var person = {
+        name : "josh",
+        age : 23,
+        adderss : "ZH",
+        arr : arr
+    }
+    arr_person[0] = person;
+    arr_person[1] = person;
+    arr_person[2] = person;
+
+    console.log(person.age.toString());
+    console.log(person.arr.toString());
+    console.log(person.name);
+    console.log(person["adderss"]);
+    console.log(arr_person.toString());
+
+    // 函数
+
+    function fun(name,age){
+        console.log(name+age);
+        return name+age;
+    }
+    function changeDemo(){
+        document.getElementById("text_id").innerHTML = fun("改变",24);
+    }
+
+    //变量的定义
+
+    //全局变量
+    global_variable = 1;
+    //局部变量
+    var local_variable = 2;
+    console.log(global_variable);
+    console.log(local_variable);
+    // delete  global_variable;
+    delete  local_variable;
+    console.log("del :"+global_variable);
+    console.log("del :"+local_variable);
+
+    /*如果变量在函数内没有声明（没有使用 var 关键字），该变量为全局变量。
+
+    以下实例中 carName 在函数内，但是为全局变量。*/
+    isVar();
+    console.log(josh);
+    console.log(josh.length);
+    console.log(josh[1]);
+    function isVar() {
+        josh = "是否有";
+    }
+
+    var str = "josh";
+    var str_obj = new String("josh");
+
+    console.log((typeof str) == String);
+    console.log(typeof str_obj);
+    // === 绝对相等 ：数据类型和值都要相同。
+    // == 数值相等即可
+    console.log(typeof str);
+    console.log(typeof str === "string");
+    console.log((typeof str == "string") ? "yes" : "no");
+
+
+    if (str.length <= 10) {
+        console.log("这是小于10的。。。")
+    } else if (10 < str.length <= 20 ) {
+        console.log("这是大于10小于20的。。。")
+    } else {
+        console.log("不限制。。。")
+    }
+
+    var day  = new Date().getDay();
+    switch (day) {
+        case 0 :
+            console.log("星期日");
+            break;
+        case 6:
+            console.log("星期六");
+            break;
+        default :
+            console.log("今天不是周末哦~")
+    }
+
+    for (x in person){
+        if (person[x] == "ZH"){
+            // break;
+            continue;
+        }
+        console.log(person[x]);
+    }
+    // constructor 判断是否是数组类型
+
+    function isArray(arr){
+        console.log(arr.constructor.toString());
+        return arr.constructor.toString().indexOf("Array") > -1;
+    }
+    console.log(isArray(arr));
+
+    console.log(new Number(null));
+    console.log(new Number(""));
+    console.log(new Number(" "));
+    console.log(parseFloat(2.1223*3.00) +":" +parseInt(2.1223*3.00));
+    console.log(new Number("josh").toString());
+
+    console.log(new Boolean(1));
+    console.log(new Number(false));
+
+    // 浮点数
+
+    var floats = 0.1;
+    var floatss = 0.2;
+    //toFixed() 精度参数须在 0 与20 之间
+    // alert((floats+floatss).toFixed(8) == 0.3);
+
+
+
+    // 正则表达式
+
+    var re = "josh mr";
+    console.log(re.search("mr"));
+    // 关于javascript 异常的处理
+
+    /* try catch throws finally */
+
+    function isNumber(){
+        var text  = document.getElementById("in").value;
+        try {
+            if (text == null || text == "") {
+                throw "不能为空";
+            } else if (isNaN(text)){
+                throw "你输入的不是数字？";
+            } else if (text > 10){
+                throw "已经大于10";
+            } else if (5 > text) {
+                throw "已经小于5"
+            }
+        }catch(err){
+            console.log(err);
+        }
+    }
+
+    // var obj = JSON.parse(person.toString());
+    console.log(person);
+    var s = JSON.stringify(person); // js对象转字符串
+    console.log(s);
+    var obj = JSON.parse(s); // 字符串转化js对象
+    console.log(obj);
+
+
+    count(0,11,43,23,234,2345,21);
+    function count(){
+
+        var lenght = arguments.length;
+        var first = arguments[0];
+        for (var i = 0 ; i < arguments.length ; i++){
+            if (first < arguments[i]){
+                first = arguments[i];
+            }
+        }
+        // alert(first);
+    }
+    // var main_var = document.getElementById("main");
+    // main_var.style.color = "#000000";
+    // // main_var.style.font
+    //
+    // document.getElementById("main").src = "text.html";
+
+    document.getElementById("buttons").onclick = function (){
+        changeColor();
+    };
+    function changeColor(){
+        var buttons = document.getElementById("buttons");
+        buttons.style.color = "#FF4040";
+    }
+
+
+    document.getElementById("in").onchange = function () {
+        var inds = document.getElementById("in");
+        inds.value = inds.value.toUpperCase();
+    }
+
+    document.getElementById("in").onmouseover = function () {
+        document.getElementById("buttons").style.color = "#FF4040";
+    }
+    document.getElementById("in").onmouseout = function () {
+        document.getElementById("buttons").style.color = "#000000";
+    }
+
+
+
+    Date.prototype.format = function(fmt){
+        var o = {
+            "M+" : this.getMonth()+1,                 //月份
+            "d+" : this.getDate(),                    //日
+            "h+" : this.getHours(),                   //小时
+            "m+" : this.getMinutes(),                 //分
+            "s+" : this.getSeconds(),                 //秒
+            "q+" : Math.floor((this.getMonth()+3)/3), //季度
+            "S"  : this.getMilliseconds()             //毫秒
+        };
+        if(/(y+)/.test(fmt)){
+            fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));
+        }
+
+        for(var k in o){
+            if(new RegExp("("+ k +")").test(fmt)){
+                fmt = fmt.replace(
+                    RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
+            }
+        }
+        return fmt;
+    }
+
+    var now = new Date();
+    // alert(now.format("yyyy-MM-dd hh:mm:ss"));
+
+    // alert(new Date().toString())
+    console.log(location.host);
+    console.log(location.hostname);
+    console.log(location.pathname);
+    console.log(location.href);
+
+
+    var date_josh = "josh_mr";
+    console.log("hah".concat(date_josh));
+
+    console.log(date_josh.substr(1,2));//os
+    console.log(date_josh.substring(2,4));//sh
+
+
+    txt = "<p>浏览器代号: " + navigator.appCodeName + "</p>";
+    txt+= "<p>浏览器名称: " + navigator.appName + "</p>";
+    txt+= "<p>浏览器版本: " + navigator.appVersion + "</p>";
+    txt+= "<p>启用Cookies: " + navigator.cookieEnabled + "</p>";
+    txt+= "<p>硬件平台: " + navigator.platform + "</p>";
+    txt+= "<p>用户代理: " + navigator.userAgent + "</p>";
+    txt+= "<p>用户代理语言: " + navigator.systemLanguage + "</p>";
+    document.getElementById("example").innerHTML=txt;
+
+
+    function ajaxDemo(){
+
+        // $.ajax({
+        //     type: "DELETE",
+        //     url: "/admin/updateById/" + pk_wageSms,
+        //     success: function () {
+        //         // 刷新页面
+        //         location.reload();
+        //     }
+        // });
+
+        $.ajax({
+            url:"http://127.0.0.1:8080/messagingservice/getReportInfoBySmsId",
+            type : "POST",
+            dateType : "json",
+            data : "key=a797c685b10a4b642d5302e4fb4900f5&sysCode=MES04&mobile=15890681776&smsId=157804452008548D7i",
+            success : function (json) {
+                // $.each(json,function (index,ele) {
+                // })
+                // alert(JSON.stringify(json));
+                alert(json.info);
+            },
+            error : function (json) {
+                console.error(JSON.stringify(json));
+            }
+        });
+    }
+
+
+
+</script>
+
+<a href="javascript:void(0)" onclick="demo2()">连接</a>
+</body>
+</html>
