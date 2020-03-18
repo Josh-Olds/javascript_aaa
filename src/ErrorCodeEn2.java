@@ -32,7 +32,7 @@ public enum ErrorCodeEn2 implements INumberEnum {
             return description;
         }
 
-    public static void main(String args[]) { // 静态方法
+    public static void main(String[] args) { // 静态方法
         int ok = ErrorCodeEn2.OK.code;
         String description = ErrorCodeEn2.OK.description;
 

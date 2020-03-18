@@ -2,8 +2,8 @@ public class stringToAscii {
     public static void main(String[] args) {
         String a = "abc";
         String b = "abc";
-        String c  = new String("abc");
-        String d  = new String("123");
+        String c  = "abc";
+        String d  = "123";
         String e = "123";
         String josh_abc = "a"+"bc";
         int age1 = 200;

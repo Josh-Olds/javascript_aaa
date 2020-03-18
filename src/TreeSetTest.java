@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * @author Josh
+ * @author
  * @version 1.0.0
  * @ClassName TreeSetTest.java
  * @Description TODO
@@ -37,7 +37,7 @@ public class TreeSetTest {
         Double a = null;
 
         System.out.println(a+"");
-        System.out.println(String.valueOf(a));
+        System.out.println(a);
 
 
     }

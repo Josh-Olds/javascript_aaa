@@ -15,11 +15,11 @@
 <div id="example"></div>
 <script src="jquery/lib/jquery.min.js"></script>
 <script>
-    document.write("<h1> hello </h1>")// 直接HTML输出流
+    document.write("<h1> hello </h1>");// 直接HTML输出流
 
     // window.alert("ahh");
     document.write(Date());
-    console.log("log...")
+    console.log("log...");
     function text(){
         // d = document.getElementById("text_id").innerHTML = "<H1>我变啦</H1>";
         d = document.getElementById("text_id");
@@ -45,12 +45,12 @@
     var string = 'guanhuaqin""';
     var string = "guan";
 
-    var arr  = new Array();
+    var arr  = [];
     arr[0] = 1;
     arr[1] = 2;
     arr[2] = 3;
     console.log(arr);
-    var arr2 = new Array("a","b","c");
+    var arr2 = ["a","b","c"];
     console.log(arr2);
     var arr3 = ["qwe","asd","zcc"];
     console.log(arr3);
@@ -61,13 +61,13 @@
      */
 
     //对象类型
-var arr_person = new Array();
+var arr_person = [];
     var person = {
         name : "josh",
         age : 23,
         adderss : "ZH",
         arr : arr
-    }
+    };
     arr_person[0] = person;
     arr_person[1] = person;
     arr_person[2] = person;
@@ -113,7 +113,7 @@ var arr_person = new Array();
     }
 
     var str = "josh";
-    var str_obj = new String("josh");
+    var str_obj = String("josh");
 
     console.log((typeof str) == String);
     console.log(typeof str_obj);
@@ -159,14 +159,14 @@ var arr_person = new Array();
     }
     console.log(isArray(arr));
 
-    console.log(new Number(null));
-    console.log(new Number(""));
-    console.log(new Number(" "));
+    console.log(Number(null));
+    console.log(Number(""));
+    console.log(Number(" "));
     console.log(parseFloat(2.1223*3.00) +":" +parseInt(2.1223*3.00));
-    console.log(new Number("josh").toString());
+    console.log(Number("josh").toString());
 
-    console.log(new Boolean(1));
-    console.log(new Number(false));
+    console.log(Boolean(1));
+    console.log(Number(false));
 
     // 浮点数
 
@@ -240,14 +240,14 @@ var arr_person = new Array();
     document.getElementById("in").onchange = function () {
         var inds = document.getElementById("in");
         inds.value = inds.value.toUpperCase();
-    }
+    };
 
     document.getElementById("in").onmouseover = function () {
         document.getElementById("buttons").style.color = "#FF4040";
-    }
+    };
     document.getElementById("in").onmouseout = function () {
         document.getElementById("buttons").style.color = "#000000";
-    }
+    };
 
 
 
@@ -272,7 +272,7 @@ var arr_person = new Array();
             }
         }
         return fmt;
-    }
+    };
 
     var now = new Date();
     // alert(now.format("yyyy-MM-dd hh:mm:ss"));
