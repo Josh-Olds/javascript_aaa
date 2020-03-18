@@ -9,4 +9,8 @@ package ResultModel;
  */
 public class Josh {
 
+    public static void main(String[] args) {
+
+    }
+
 }
