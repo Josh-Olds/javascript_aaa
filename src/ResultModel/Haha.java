@@ -15,6 +15,12 @@ public class Haha {
         System.out.println("hahhehe ");
         System.out.println("hahhehe ");
         System.out.println("hahhehe ");
+		
+		 System.out.println("hahha");
+        System.out.println("joahsshfsd");
+        System.out.println("hahhehe ");
+        System.out.println("hahhehe ");
+        System.out.println("hahhehe ");
     }
 
 
