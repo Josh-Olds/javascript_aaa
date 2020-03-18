@@ -6,11 +6,11 @@ package ResultModel;
  */
 public class Haha {
     public static void main(String[] args) {
-        System.out.println("hahhehe ");
-        System.out.println("josh");
-        System.out.println("hahhehe ");
-        System.out.println("josh");
-        System.out.println("hahha");
+        System.out.println("1");
+        System.out.println("2");
+        System.out.println("3 ");
+        System.out.println("4");
+        System.out.println("5");
         System.out.println("joahsshfsd");
         System.out.println("hahhehe ");
         System.out.println("hahhehe ");
@@ -21,6 +21,11 @@ public class Haha {
         System.out.println("hahhehe ");
         System.out.println("hahhehe ");
         System.out.println("hahhehe ");
+		        System.out.println("1");
+        System.out.println("2");
+        System.out.println("3 ");
+        System.out.println("4");
+        System.out.println("5");
     }
 
 
