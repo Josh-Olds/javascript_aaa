@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc112d4d-98de-4709-8fec-024965482a88" name="Default Changelist" comment="">
+    <list default="true" id="cc112d4d-98de-4709-8fec-024965482a88" name="Default Changelist" comment="这是第三次提交">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ErrorCodeEn2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ErrorCodeEn2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ResultModel/Haha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultModel/Haha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TreeSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeSetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jquery/Jquery.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/jquery/Jquery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jquery/菜单.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/jquery/菜单.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stringToAscii.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stringToAscii.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/fastjson/target/" />
@@ -54,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ResultModel/Haha.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="325">
+              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
               <folding>
                 <element signature="docComment;class#Haha#0" expanded="true" />
               </folding>
@@ -154,58 +161,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
               <item name="javascript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="fastjson" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="fastjson" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="fastjson" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="fastjson" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="fastjson" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="fastjson" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
@@ -223,6 +184,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -230,7 +192,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Local_Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -356,6 +318,7 @@
       <workItem from="1583829832131" duration="6557000" />
       <workItem from="1583996592041" duration="1881000" />
       <workItem from="1584081531887" duration="2873000" />
+      <workItem from="1584501428350" duration="1076000" />
     </task>
     <task id="LOCAL-00001" summary="哈哈">
       <created>1583833383710</created>
@@ -403,7 +366,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206421000" />
+    <option name="totallyTimeSpent" value="208708000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -416,8 +379,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.46875" visible="true" weight="0.21849866" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.46875" visible="true" weight="0.22117962" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -431,12 +395,12 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.5202312" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.5202312" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32658958" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.16473988" />
-      <window_info active="true" anchor="bottom" id="SVN Repositories" order="13" weight="0.32947975" />
+      <window_info active="true" anchor="bottom" id="SVN Repositories" order="13" weight="0.32803467" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Maven" order="1" weight="0.3297587" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -1149,8 +1113,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ResultModel/Haha.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="325">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
           <folding>
             <element signature="docComment;class#Haha#0" expanded="true" />
           </folding>
