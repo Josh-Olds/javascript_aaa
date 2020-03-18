@@ -6,11 +6,6 @@ package ResultModel;
  */
 public class Haha {
     public static void main(String[] args) {
-
-
-
-        System.out.println("hahhehe ");
-        System.out.println("josh");
         System.out.println("hahhehe ");
         System.out.println("josh");
         System.out.println("hahhehe ");
